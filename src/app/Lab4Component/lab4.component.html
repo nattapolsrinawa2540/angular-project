@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let item of items" [ngClass]="{ 'number-even':item%2 === 0, 'number-odd':item%2 !== 0 }">
+        <p>{{ item }}</p>
+    </li>
+</ul>
